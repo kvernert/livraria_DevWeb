@@ -49,8 +49,7 @@ class UserAdmin(BaseUserAdmin):
     )
 
 
-@admin.register(User)
-class UserAdmin(UserAdmin):
+admin.site.register(models.User, UserAdmin)
 
 @admin.register(Autor)
 class AutorAdmin(admin.ModelAdmin):
